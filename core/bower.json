@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "jquery": "2.0.3",
+    "jquery-file-upload": "9.9.2",
     "angular": "1.2.28",
     "angular-route": "1.2.28",
     "angular-animate": "1.2.28",

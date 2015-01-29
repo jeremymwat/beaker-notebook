@@ -66,6 +66,14 @@
           bkCoreManager.openNotebook("config/tutorial.bkr", undefined, true);
         };
 
+        console.log('setting up uploader');
+        $('#fileupload').fileupload({
+          dataType: 'json',
+          done: function (e, data) {
+            console.log('done');
+            console.log(data);
+          }});
+
         // ask for tracking permission
         $scope.isAllowAnonymousTracking = false;
         if (bkTrack.isNeedPermission()) {
